@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dika Anggara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <h2>WELCOME</h2>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="interests.html">Interests</a>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="home">
+        <div class="home-text">
+            <p>HELLO, I'M</p>
+            <h1>
+                DIKA<br>
+                ANGGARA<br>
+                SANTOSA
+            </h1>
+            <h3>Student • Programmer • Creator</h3>
+            <p>
+                Saya adalah siswa RPL yang tertarik
+                dengan teknologi, programming,
+                dan berbagai aktivitas kreatif.
+                Saya juga senang melaukan kegiatan
+                yang berkaitan dengan kinerja fisik
+            </p>
+            <a href="about.html" class="button">Kenal Lebih Dekat</a>
+        </div>
+        <div class="profile">
+            <img src="gambar/foto utama.png" alt="Foto Dika">
+        </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section class="hobbies">
+        <p class="small-title">A LITTLE ABOUT ME</p>
+        <h2>THINGS I LOVE</h2>
+        <p class="hobby-description">
+            Klik salah satu card untuk mengetahui
+            lebih banyak tentang saya.
+        </p>
+        <div class="hobbies-container">
+
+            <!-- GAMING -->
+            <div class="hobby-card" id="gaming">
+                <div class="hobby-front">
+                    <img src="gambar/game.jpeg" alt="Gaming">
+                    <div class="hobby-content">
+                        <h3>🎮 Gaming</h3>
+                        <p>
+                            Salah satu cara saya bersantai
+                            ketika memiliki banyak waktu luang.
+                        </p>
+                        <button onclick="openHobby('gaming')">Explore</button>
+                    </div>
+                </div>
+                <div class="hobby-detail">
+                    <img src="gambar/game.jpeg" alt="Gaming">
+                    <div class="detail-content">
+                        <h3>🎮 GAMING</h3>
+                        <p>
+                            Bermain game menjadi salah satu kegiatan
+                            yang saya lakukan ketika ingin bersantai
+                            atau bermain dengan teman saat sedang tidak bersama.
+                        </p>
+                        <p>
+                            Saya menikmati berbagai jenis game  
+                            dan biasanya bermain ketika memiliki
+                            waktu luang.
+                        </p>
+                        <a href="hobbies.html#gaming" class="detail-button">Lihat Semua Hobi</a>
+                        <button onclick="closeHobby('gaming')">← Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GYM -->
+            <div class="hobby-card" id="gym">
+                <div class="hobby-front">
+                    <img src="gambar/olahraga.jpeg" alt="Gym">
+                    <div class="hobby-content">
+                        <h3>🏋️ Sport</h3>
+                        <p>
+                            Saya suka berbagai jenis olahraga fisik karena
+                            Aktifitas fisik membuat saya tetap sehat dan bugar.
+                        </p>
+                        <button onclick="openHobby('gym')">Explore</button>
+                    </div>
+                </div>
+                <div class="hobby-detail">
+                    <img src="gambar/olahraga.jpeg" alt="Gym">
+                    <div class="detail-content">
+                        <h3>🏋️ Sport</h3>
+                        <p>
+                            Gym adalah salah satu aktivitas
+                            yang saya lakukan untuk menjaga
+                            tubuh tetap aktif.
+                        </p>
+                        <p>
+                            Saya menyukai Gym karena selain olahraga, saya juga belajar
+                            tentang konsistensi dan disiplin terhadap diri sendiri.
+                        </p>
+                        <a href="hobbies.html#gym" class="detail-button">Lihat Semua Hobi</a>
+                        <button onclick="closeHobby('gym')">← Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKING -->
+            <div class="hobby-card" id="cooking">
+                <div class="hobby-front">
+                    <img src="gambar/masak.jpeg" alt="Cooking">
+                    <div class="hobby-content">
+                        <h3>🍳 Cooking</h3>
+                        <p>
+                            Saya suka mencoba membuat dan mengikuti
+                             resep berbagai makanan yang saya temukan di media sosial.
+                        </p>
+                        <button onclick="openHobby('cooking')">Explore</button>
+                    </div>
+                </div>
+                <div class="hobby-detail">
+                    <img src="gambar/masak.jpeg" alt="Cooking">
+                    <div class="detail-content">
+                        <h3>🍳 COOKING</h3>
+                        <p>
+                            Memasak adalah salah satu kegiatan
+                            yang saya nikmati ketika ingin
+                            mencoba sesuatu yang baru.
+                        </p>
+                        <p>
+                            Saya suka mencoba resep yang saya temukan
+                            dan membuat makanan sederhana.
+                        </p>
+                        <a href="hobbies.html#cooking" class="detail-button">Lihat Semua Hobi</a>
+                        <button onclick="closeHobby('cooking')">← Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Dika Anggara Santosa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
